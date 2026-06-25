@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question 2</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+background:linear-gradient(135deg,#ffd9e8,#fff0f6,#ffe6f1);
+font-family:'Cormorant Garamond',serif;
+overflow:hidden;
+position:relative;
+}
+
+.fall{
+position:absolute;
+top:-60px;
+font-size:30px;
+animation:drop linear infinite;
+}
+
+@keyframes drop{
+0%{transform:translateY(-50px);}
+100%{transform:translateY(120vh);}
+}
+
+.card{
+width:100%;
+max-width:420px;
+padding:28px;
+text-align:center;
+background:rgba(255,192,203,.35);
+backdrop-filter:blur(12px);
+border-radius:28px;
+z-index:2;
+}
+
+h2{
+font-family:'Great Vibes';
+font-size:48px;
+color:#ff3d7f;
+}
+
+p{
+font-size:24px;
+margin:18px 0;
+line-height:1.5;
+}
+
+button{
+display:block;
+width:100%;
+margin:12px auto;
+padding:14px;
+border:none;
+border-radius:25px;
+font-size:17px;
+cursor:pointer;
+background:#ff4d88;
+color:white;
+}
+
+#msg{
+margin-top:15px;
+font-size:20px;
+color:#ff2e63;
+}
+</style>
+</head>
+
+<body>
+
+<div class="fall" style="left:8%;animation-duration:6s;">❤️</div>
+<div class="fall" style="left:20%;animation-duration:8s;">✨</div>
+<div class="fall" style="left:42%;animation-duration:7s;">🌹</div>
+<div class="fall" style="left:68%;animation-duration:5s;">❤️</div>
+<div class="fall" style="left:88%;animation-duration:7s;">✨</div>
+
+<div class="card">
+
+<h2>Another One ❤️</h2>
+
+<p>
+Who deserves every beautiful moment today? 🌙
+</p>
+
+<button onclick="show()">Someone special 🌸</button>
+<button onclick="show()">Ladho ❤️</button>
+
+<div id="msg"></div>
+
+<button onclick="window.location.href='page4.html'">
+Next →
+</button>
+
+</div>
+
+<script>
+function show(){
+document.getElementById("msg").innerHTML="Beautiful answer ✨";
+}
+</script>
+
+</body>
+</html>
