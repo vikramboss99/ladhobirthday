@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Ladho ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+background:linear-gradient(135deg,#ffd9e8,#fff0f6,#ffe6f1);
+font-family:'Cormorant Garamond',serif;
+overflow:hidden;
+position:relative;
+}
+
+/* falling effect */
+.fall{
+position:absolute;
+top:-60px;
+font-size:30px;
+animation:drop linear infinite;
+opacity:1;
+}
+
+@keyframes drop{
+0%{transform:translateY(-50px);}
+100%{transform:translateY(120vh);}
+}
+
+/* card */
+.card{
+width:100%;
+max-width:420px;
+padding:28px;
+text-align:center;
+background:rgba(255,192,203,.35);
+backdrop-filter:blur(12px);
+border-radius:28px;
+border:2px solid rgba(255,255,255,.45);
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+z-index:2;
+animation:fade .8s ease;
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(15px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+h1{
+font-family:'Great Vibes',cursive;
+font-size:52px;
+color:#ff3d7f;
+margin-bottom:15px;
+}
+
+p{
+font-size:24px;
+line-height:1.6;
+color:#444;
+}
+
+button{
+margin-top:25px;
+width:100%;
+padding:14px;
+border:none;
+border-radius:25px;
+font-size:18px;
+cursor:pointer;
+background:#ff4d88;
+color:white;
+}
+
+/* falling objects */
+</style>
+</head>
+
+<body>
+
+<div class="fall" style="left:5%;animation-duration:6s;">❤️</div>
+<div class="fall" style="left:15%;animation-duration:7s;">🌹</div>
+<div class="fall" style="left:25%;animation-duration:5s;">✨</div>
+<div class="fall" style="left:40%;animation-duration:8s;">❤️</div>
+<div class="fall" style="left:55%;animation-duration:6s;">🌹</div>
+<div class="fall" style="left:70%;animation-duration:7s;">✨</div>
+<div class="fall" style="left:82%;animation-duration:5s;">❤️</div>
+<div class="fall" style="left:92%;animation-duration:8s;">🌹</div>
+
+<div class="card">
+
+<h1>Hey Ladho 🌷</h1>
+
+<p>
+Not every day feels special… <br><br>
+But today does ❤️ <br><br>
+Because today belongs to someone beautiful ✨
+</p>
+
+<button onclick="window.location.href='page2.html'">
+Begin Journey 💖
+</button>
+
+</div>
+
+</body>
+</html>
